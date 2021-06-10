@@ -1,0 +1,25 @@
+<!-- Create a button, when you click on the button some portion of the paragraph should be updated.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Assignment 7</title>
+</head>
+<body>
+	<h1>click on the button</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet facilisis magna etiam tempor orci.<span id="clr">Imperdiet dui accumsan sit amet nulla. Parturient montes nascetur ridiculus mus mauris vitae. Ac turpis egestas sed tempus urna et pharetra pharetra massa.</span> In ante metus dictum at tempor commodo ullamcorper a. Nascetur ridiculus mus mauris vitae ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames</p>
+
+	<button onclick="colorChange()">click to change the color</button>
+	<button onclick="changeText()">click to change the text</button>
+
+	<script>
+		function colorChange()
+		{
+			document.getElementById('clr').style.color = 'green';
+		}
+		function changeText(){
+			document.getElementById('clr').innerHTML = "----this the text will show up when the button clicked-----";
+		}
+	</script>
+</body>
+</html>
